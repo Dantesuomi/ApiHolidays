@@ -43,33 +43,32 @@ public class HttpConnection {
         System.out.println(input);
 
         if (input.equalsIgnoreCase("January")) {
-            boolean foundAprilHoliday = false;
+            boolean foundJanuaryHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-01")) {
                     JOptionPane.showMessageDialog(null, "Holiday in January: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
+                    foundJanuaryHoliday = true;
                     break;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundJanuaryHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in January.", "Information", JOptionPane.OK_OPTION);
             }
         }
 
         if (input.equalsIgnoreCase("February")) {
-            boolean foundAprilHoliday = false;
+            boolean foundFebruaryHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-02")) {
                     JOptionPane.showMessageDialog(null, "Holiday in February: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundFebruaryHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundFebruaryHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in February.", "Information", JOptionPane.OK_OPTION);
             }
         }
@@ -82,7 +81,6 @@ public class HttpConnection {
                 if (date.startsWith("2023-03")) {
                     JOptionPane.showMessageDialog(null, "Holiday in March: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.OK_OPTION);
                     foundMarchHoliday = true;
-                    break;
                 }
             }
             if (!foundMarchHoliday) {
@@ -99,7 +97,6 @@ public class HttpConnection {
                 if (date.startsWith("2023-04")) {
                     JOptionPane.showMessageDialog(null, "Holiday in April: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
                     foundAprilHoliday = true;
-                    break;
                 }
             }
             if (!foundAprilHoliday) {
@@ -109,130 +106,123 @@ public class HttpConnection {
         }
 
         if (input.equalsIgnoreCase("May")) {
-            boolean foundAprilHoliday = false;
+            boolean foundMayHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-05")) {
                     JOptionPane.showMessageDialog(null, "Holiday in May: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundMayHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundMayHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in May.", "Information", JOptionPane.OK_OPTION);
             }
 
         }
 
         if (input.equalsIgnoreCase("June")) {
-            boolean foundAprilHoliday = false;
+            boolean foundJuneHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-06")) {
                     JOptionPane.showMessageDialog(null, "Holiday in June: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundJuneHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundJuneHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in June.", "Information", JOptionPane.OK_OPTION);
             }
         }
 
         if (input.equalsIgnoreCase("July")) {
-            boolean foundAprilHoliday = false;
+            boolean foundJulyHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-07")) {
                     JOptionPane.showMessageDialog(null, "Holiday in July: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundJulyHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundJulyHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in July.", "Information", JOptionPane.OK_OPTION);
             }
         }
 
         if (input.equalsIgnoreCase("August")) {
-            boolean foundAprilHoliday = false;
+            boolean foundAugustHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-08")) {
                     JOptionPane.showMessageDialog(null, "Holiday in August: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundAugustHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundAugustHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in August.", "Information", JOptionPane.OK_OPTION);
             }
         }
 
         if (input.equalsIgnoreCase("September")) {
-            boolean foundAprilHoliday = false;
+            boolean foundSeptemberHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-09")) {
                     JOptionPane.showMessageDialog(null, "Holiday in September: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundSeptemberHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundSeptemberHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in September.", "Information", JOptionPane.OK_OPTION);
             }
         }
 
         if (input.equalsIgnoreCase("October")) {
-            boolean foundAprilHoliday = false;
+            boolean foundOctoberHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-10")) {
                     JOptionPane.showMessageDialog(null, "Holiday in October: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundOctoberHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundOctoberHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in October.", "Information", JOptionPane.OK_OPTION);
             }
         }
 
         if (input.equalsIgnoreCase("November")) {
-            boolean foundAprilHoliday = false;
+            boolean foundNovemberHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
                 if (date.startsWith("2023-11")) {
                     JOptionPane.showMessageDialog(null, "Holiday in November: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundNovemberHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundNovemberHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in November.", "Information", JOptionPane.OK_OPTION);
             }
         }
 
         if (input.equalsIgnoreCase("December")) {
-            boolean foundAprilHoliday = false;
+            String month = "12";
+            boolean foundDecemberHoliday = false;
             for (int i = 0; i < englandAndWalesHolidays.length(); i++) {
                 JSONObject holiday = englandAndWalesHolidays.getJSONObject(i);
                 String date = holiday.getString("date");
-                if (date.startsWith("2023-12")) {
+                if (date.startsWith("2023-" + month)) {
                     JOptionPane.showMessageDialog(null, "Holiday in December: " + holiday.getString("title") + " on " + date, "Information", JOptionPane.INFORMATION_MESSAGE);
-                    foundAprilHoliday = true;
-                    break;
+                    foundDecemberHoliday = true;
                 }
             }
-            if (!foundAprilHoliday) {
+            if (!foundDecemberHoliday) {
                 JOptionPane.showMessageDialog(null, "No holidays in December.", "Information", JOptionPane.OK_OPTION);
             }
         }
